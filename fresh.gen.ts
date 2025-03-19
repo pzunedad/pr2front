@@ -4,9 +4,9 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
+import * as $_layouts from "./routes/_layouts.tsx";
 import * as $index from "./routes/index.tsx";
-import * as $test_layout from "./routes/test/_layout.tsx";
-import * as $word_word_ from "./routes/word/[word].tsx";
+import * as $words from "./routes/words.tsx";
 
 import type { Manifest } from "$fresh/server.ts";
 
@@ -14,9 +14,9 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
+    "./routes/_layouts.tsx": $_layouts,
     "./routes/index.tsx": $index,
-    "./routes/test/_layout.tsx": $test_layout,
-    "./routes/word/[word].tsx": $word_word_,
+    "./routes/words.tsx": $words,
   },
   islands: {},
   baseUrl: import.meta.url,

@@ -1,129 +1,154 @@
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-* {
-  margin: 0;
-}
-button {
-  color: inherit;
-}
-button, [role="button"] {
-  cursor: pointer;
-}
-code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  font-size: 1em;
-}
-img,
-svg {
-  display: block;
-}
-img,
-video {
-  max-width: 100%;
-  height: auto;
+
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-html {
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+input {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
 }
-.transition-colors {
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+
+input:focus {
+  border-color: #007BFF;
 }
-.my-6 {
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+
+button:hover {
+  background-color: #0056b3;
 }
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+
+div {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
 }
-.my-4 {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+
+h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+
+ul {
+  list-style: none;
+  padding: 0;
 }
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
-.py-8 {
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+
+li:last-child {
+  border-bottom: none;
 }
-.bg-\[\#86efac\] {
-  background-color: #86efac;
+
+p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+
+audio {
+  display: block;
+  margin-top: 5px;
 }
-.py-6 {
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
 }
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+
+a:hover {
+  text-decoration: underline;
 }
-.py-1 {
-  padding-bottom: 0.25rem;
-  padding-top: 0.25rem;
-}
-.border-gray-500 {
-  border-color: #6b7280;
-}
-.bg-white {
-  background-color: #fff;
-}
-.flex {
+
+
+/* Fondo de la página */
+body {
+  background: linear-gradient(to right, #22b8f3, #25fc37);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
   display: flex;
-}
-.gap-8 {
-  grid-gap: 2rem;
-  gap: 2rem;
-}
-.font-bold {
-  font-weight: 700;
-}
-.max-w-screen-md {
-  max-width: 768px;
-}
-.flex-col {
   flex-direction: column;
-}
-.items-center {
+  justify-content: center;
   align-items: center;
 }
-.justify-center {
-  justify-content: center;
+
+/* Contenedor principal */
+div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
 }
-.border-2 {
-  border-width: 2px;
+
+/* Estilos del título */
+h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
 }
-.rounded {
-  border-radius: 0.25rem;
+
+/* Estilos del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
 }
-.hover\:bg-gray-200:hover {
-  background-color: #e5e7eb;
+
+/* Campo de entrada */
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
 }
-.tabular-nums {
-  font-variant-numeric: tabular-nums;
+
+/* Botón */
+button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #ff7f50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff4500;
 }
